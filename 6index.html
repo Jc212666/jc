@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="建鋮工程有限公司 - 提供專業土木、園藝、水電等工程服務，效率快、品質高、誠信優。">
+  <meta name="author" content="建鋮工程有限公司" />
+  <title>建鋮工程有限公司</title>
+  <link rel="icon" href="./jc-logo.png" />
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "標楷體", DFKai-SB, "KaiTi", "Microsoft JhengHei", serif;
+      background-color: #f7f9fb;
+      color: #333;
+      margin: 0;
+    }
+    header {
+      background-color: #5c9ead;
+      color: white;
+      padding: 30px 20px;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: left;
+    }
+    .header-container img {
+      width: 80px;
+      height: auto;
+    }
+    nav {
+      background-color: #4db6ac;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+    nav a:hover {
+      background-color: #0288d1;
+      border-radius: 4px;
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 24px;
+      color: #0288d1;
+      border-left: 5px solid #0288d1;
+      padding-left: 10px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+    .service-item {
+      background-color: #e3f2fd;
+      border: 1px solid #b3e5fc;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .service-item img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .project-group {
+      margin-top: 30px;
+    }
+    .project-group h3 {
+      color: #0277bd;
+      margin-bottom: 10px;
+    }
+    .project-group img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .project-group ul {
+      padding-left: 20px;
+    }
+    .project-group ul li {
+      margin-bottom: 10px;
+    }
+    .contact p, .contact a {
+      font-size: 16px;
+    }
+    .contact img {
+      max-width: 200px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #5c9ead;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    .top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #0288d1;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+      z-index: 100;
+    }
+  </style>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      document.getElementById('topBtn').style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="./jc-logo.jpg" alt="建鋮 LOGO" loading="lazy" />
+      <div>
+        <h1>建鋮工程有限公司</h1>
+        <p>｜效率快｜品質高｜誠信優</p>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="主要導覽">
+    <a href="#about">公司簡介</a>
+    <a href="#services">服務項目</a>
+    <a href="#projects">工程實績</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+
+  <section id="about">
+    <h2>公司簡介</h2>
+    <p>建鋮工程有限公司創立於 2022 年，是專業的土木包工業營造公司。我們專精於土木建築工程、園藝工程、水電工程等相關專業領域，提供效率快、品質高、誠信優的客製化施工服務。</p>
+  </section>
+
+  <section id="services">
+    <h2>服務項目</h2>
+    <div class="services">
+      <div class="service-item">
+        <h3>土木建築工程</h3>
+        <p>建築修改繕、防水防漏、油漆工程與整合施工等服務。</p>
+      </div>
+      <div class="service-item">
+        <h3>園藝工程</h3>
+        <p>草皮維護、樹枝修剪矮化及移除、綠化造景與自動灑水系統建置等服務。</p>
+      </div>
+      <div class="service-item">
+        <h3>水電工程</h3>
+        <p>電力系統修繕安裝、衛浴設備安裝與汰換、給排水管配置與燈具安裝與汰換等服務。</p>
+      </div>
+      <div class="service-item">
+        <h3>其他工程</h3>
+        <p>建築外牆清洗、防鳥網架設、植生網架設、山坡地護坡、停車格標線繪製等施工。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>工程實績</h2>
+    <div class="project-group">
+      <h3>土木建築工程</h3>
+      <ul>
+        <li>老屋翻修：
+          <img src="./老屋翻修1.jpg" alt="外牆拉皮" loading="lazy">
+          <img src="./老屋翻修2.jpg" alt="室內翻修" loading="lazy">
+        </li>
+        <li>套房與廚房改建：
+          <img src="./套房改建.jpg" alt="套房改建" loading="lazy">
+          <img src="./廚房改建.jpg" alt="廚房改建" loading="lazy">
+        </li>
+        <li>油漆及防水工程：
+          <img src="./油漆1.jpg" alt="牆面壁癌整修" loading="lazy">
+          <img src="./油漆2.jpg" alt="牆面油漆" loading="lazy">
+          <img src="./防水工程.jpg" alt="屋頂防水施工" loading="lazy">
+        </li>
+      </ul>
+    </div>
+    <div class="project-group">
+      <h3>園藝工程</h3>
+      <ul>
+        <li>草皮與植栽維護：
+          <img src="./草皮維護.jpg" alt="草皮維護" loading="lazy">
+          <img src="./樹枝修枝移除.jpg" alt="樹枝修剪及移除" loading="lazy">
+        </li>
+      </ul>
+    </div>
+    <div class="project-group">
+      <h3>水電工程</h3>
+      <ul>
+        <li>低壓電源施工：
+          <img src="./分電表安裝.jpg" alt="分電表安裝" loading="lazy">
+          <img src="./低壓電源改接.jpg" alt="低壓電源改接" loading="lazy">
+        </li>
+        <li>燈具汰換：
+          <img src="./燈具汰換1.jpg" alt="燈具汰換" loading="lazy">
+          <img src="./燈具汰換2.jpg" alt="燈具汰換" loading="lazy">
+        </li>
+        <li>衛浴設備汰換：
+          <img src="./馬桶更換1.jpg" alt="衛浴設備汰換" loading="lazy">
+        </li>
+      </ul>
+    </div>
+    <div class="project-group">
+      <h3>其他工程</h3>
+      <ul>
+        <li>外牆與特殊施工：
+          <img src="./外牆清洗.jpg" alt="外牆清洗施工" loading="lazy">
+          <img src="./防鳥網掛設.jpg" alt="防鳥網施工照" loading="lazy">
+          <img src="./山坡地護坡.jpg" alt="山坡護坡工程" loading="lazy">
+          <img src="./停車格標線1.jpg" alt="停車格標線劃設" loading="lazy">
+          <img src="./停車格標線2.jpg" alt="停車格標線劃設" loading="lazy">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>聯絡我們</h2>
+    <div class="contact">
+      <p>📧 電子郵件：<a href="mailto:jc90212666@gmail.com">jc90212666@gmail.com</a></p>
+      <p>📱 加入 LINE 好友：<a href="https://line.me/ti/p/9hBljiVpw5" target="_blank" rel="noopener noreferrer">點我加好友</a></p>
+      <img src="./line-qrcode.jpg" alt="LINE QR Code" loading="lazy">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 建鋮工程有限公司｜版權所有
+  </footer>
+
+  <div class="top-btn" id="topBtn" onclick="scrollToTop()" aria-label="回到頁面頂端">⬆</div>
+</body>
+</html>
